@@ -5,6 +5,7 @@ import 'book.dart';
 
 class BookService extends ChangeNotifier {
   List<Book> bookList = []; // 책 목록
+<<<<<<< HEAD
   List<Book> likedBookList = [];
 
   void toggleLikeBook({required Book book}) {
@@ -16,6 +17,8 @@ class BookService extends ChangeNotifier {
     }
     notifyListeners();
   }
+=======
+>>>>>>> 81a32af030f3f02cb5c0c4f34bcb248d0767ff97
 
   void search(String q) async {
     bookList.clear(); // 검색 버튼 누를때 이전 데이터들을 지워주기
@@ -37,5 +40,9 @@ class BookService extends ChangeNotifier {
         bookList.add(book);
       }
     }
+<<<<<<< HEAD
+=======
+    notifyListeners();
+>>>>>>> 81a32af030f3f02cb5c0c4f34bcb248d0767ff97
   }
 }
