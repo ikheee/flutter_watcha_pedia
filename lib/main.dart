@@ -112,29 +112,7 @@ class SearchPage extends StatelessWidget {
               itemBuilder: (context, index) {
                 if (bookService.bookList.isEmpty) return SizedBox();
                 Book book = bookService.bookList.elementAt(index);
-<<<<<<< HEAD
                 return BookTile(book: book);
-=======
-                return ListTile(
-                  onTap: () {},
-                  leading: Image.network(
-                    book.thumbnail,
-                    fit: BoxFit.fitHeight,
-                  ),
-                  title: Text(
-                    book.title,
-                    style: TextStyle(fontSize: 16),
-                  ),
-                  subtitle: Text(
-                    book.subtitle,
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                  trailing: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.star_border),
-                  ),
-                );
->>>>>>> 81a32af030f3f02cb5c0c4f34bcb248d0767ff97
               },
             ),
           ),
@@ -144,7 +122,6 @@ class SearchPage extends StatelessWidget {
   }
 }
 
-<<<<<<< HEAD
 class BookTile extends StatelessWidget {
   const BookTile({
     super.key,
@@ -186,8 +163,6 @@ class BookTile extends StatelessWidget {
   }
 }
 
-=======
->>>>>>> 81a32af030f3f02cb5c0c4f34bcb248d0767ff97
 class LikedBookPage extends StatelessWidget {
   const LikedBookPage({super.key});
 
@@ -197,7 +172,6 @@ class LikedBookPage extends StatelessWidget {
       body: Center(
         child: Text("좋아요"),
       ),
-<<<<<<< HEAD
       // body: Padding(
       //   padding: const EdgeInsets.symmetric(horizontal: 12),
       //   child: ListView.separated(
@@ -212,8 +186,6 @@ class LikedBookPage extends StatelessWidget {
       //     },
       //   ),
       // ),
-=======
->>>>>>> 81a32af030f3f02cb5c0c4f34bcb248d0767ff97
     );
   }
 }
